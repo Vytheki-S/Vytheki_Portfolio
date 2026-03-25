@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0D0D1A;
+    color: #FFFFFF;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
