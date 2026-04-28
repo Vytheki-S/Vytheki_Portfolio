@@ -44,14 +44,14 @@ export function Hero() {
                 </span>
               </div>
               <p className="text-[#8899AA] text-sm font-mono">
-                Android Developer  |  Data Science Student  |  UI/UX Designer
+                Data Science Undergraduate  |  Data Analyst  |  Full-Stack Developer
               </p>
             </div>
 
             {/* Bio */}
             <p className="text-[#8899AA] text-base lg:text-lg leading-relaxed max-w-xl">
-              Motivated 3rd-year IT undergraduate with hands-on experience in full-stack web and Android development. 
-              Passionate about building real-world, scalable, and user-focused systems with clean code.
+              Motivated 3rd-year Data Science undergraduate with hands-on experience in data analysis, Python, and SQL.
+              Passionate about building insight-driven solutions and developing full-stack web applications that turn data into meaningful outcomes.
             </p>
 
             {/* CTA Buttons */}
