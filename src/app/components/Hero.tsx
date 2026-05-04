@@ -44,14 +44,13 @@ export function Hero() {
                 </span>
               </div>
               <p className="text-[#8899AA] text-sm font-mono">
-                Android Developer  |  Data Science Student  |  UI/UX Designer
+                Data Science Undergraduate | Data Analyst | Full-Stack Developer
               </p>
             </div>
 
             {/* Bio */}
             <p className="text-[#8899AA] text-base lg:text-lg leading-relaxed max-w-xl">
-              Motivated 3rd-year IT undergraduate with hands-on experience in full-stack web and Android development. 
-              Passionate about building real-world, scalable, and user-focused systems with clean code.
+              Motivated 3rd-year IT undergraduate specializing in data science and full-stack development. Experienced in data analysis using Python and SQL, and building insight-driven applications that turn data into clear, actionable outcomes. Passionate about scalable systems and user-focused design.
             </p>
 
             {/* CTA Buttons */}
@@ -63,7 +62,8 @@ export function Hero() {
                 View My Projects
               </button>
               <a
-                href="#contact"
+                href="/Vytheki_SE.pdf"
+                download="Vytheki_SE.pdf"
                 className="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0D0D1A] transition-all"
               >
                 Download CV
