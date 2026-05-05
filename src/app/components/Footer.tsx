@@ -30,7 +30,7 @@ export function Footer() {
               Vytheki Sathiyananthan
             </h3>
             <p className="text-[#8899AA] text-sm">
-              Full-Stack Developer & Android Developer
+              Full-Stack Developer and Software Engineer
             </p>
           </div>
 

@@ -7,6 +7,38 @@ export function Hero() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const downloadCV = async () => {
+    const candidates = [
+      'Vytheki_SE_Final (1).pdf',
+      'Vytheki_SE_Final(1).pdf',
+      'Vytheki_SE_FInal(1).pdf',
+      'Vytheki_SE_Final(1)(3).pdf',
+      'Vytheki_SE_Final.pdf',
+      'Vytheki_SE.pdf',
+    ];
+
+    let found: string | null = null;
+    for (const name of candidates) {
+      try {
+        const res = await fetch(`/${encodeURIComponent(name)}`, { method: 'HEAD' });
+        if (res && res.ok) {
+          found = name;
+          break;
+        }
+      } catch (e) {
+        // ignore and try next candidate
+      }
+    }
+
+    const file = found || candidates[candidates.length - 1];
+    const link = document.createElement('a');
+    link.href = `/${encodeURIComponent(file)}`;
+    link.download = file;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background with radial gradient glow */}
@@ -40,17 +72,17 @@ export function Hero() {
             <div className="space-y-3">
               <div className="inline-block bg-[#00A3E0] px-4 py-2">
                 <span className="font-mono text-white uppercase tracking-wider text-sm font-semibold">
-                  FULL-STACK DEVELOPER
+                  SOFTWARE ENGINEER / FULL-STACK DEVELOPER
                 </span>
               </div>
               <p className="text-[#8899AA] text-sm font-mono">
-                Data Science Undergraduate | Data Analyst | Full-Stack Developer
+                3rd-Year IT Undergraduate | Data Science | Production-Ready Applications
               </p>
             </div>
 
             {/* Bio */}
             <p className="text-[#8899AA] text-base lg:text-lg leading-relaxed max-w-xl">
-              Motivated 3rd-year IT undergraduate specializing in data science and full-stack development. Experienced in data analysis using Python and SQL, and building insight-driven applications that turn data into clear, actionable outcomes. Passionate about scalable systems and user-focused design.
+              3rd-year IT undergraduate specializing in data science with hands-on experience independently designing, building, and deploying production web applications using React, Django REST Framework, Node.js, and Go. Proven ability to architect secure JWT authentication systems, design normalised relational schemas, and build RESTful APIs with clean service-layer structure. Strong frontend skills in React with component-based architecture, protected routing, and responsive UI. Actively seeking a Software Engineering / Full-Stack Developer internship.
             </p>
 
             {/* CTA Buttons */}
@@ -61,13 +93,12 @@ export function Hero() {
               >
                 View My Projects
               </button>
-              <a
-                href="/Vytheki_SE.pdf"
-                download="Vytheki_SE.pdf"
+              <button
+                onClick={downloadCV}
                 className="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0D0D1A] transition-all"
               >
                 Download CV
-              </a>
+              </button>
             </div>
 
             {/* Social Links */}

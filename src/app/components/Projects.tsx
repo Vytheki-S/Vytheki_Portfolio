@@ -31,33 +31,35 @@ export function Projects() {
       tags: ['React', 'Django', 'Python', 'REST API', 'JWT'],
       category: 'Web',
       isFeatured: true,
-      githubUrl: 'https://github.com/Vytheki-S',
+      githubUrl: 'https://github.com/Vytheki-S/Gear-Up-E-commerce-',
     },
     {
       id: 2,
-      title: 'EventAure',
+      title: 'EventAura',
       description: 'Event management platform built with TypeScript and React, component-based architecture',
       tags: ['TypeScript', 'React', 'CSS'],
       category: 'Web',
       isFeatured: true,
-      githubUrl: 'https://github.com/Vytheki-S',
+      isClient: true,
+      githubUrl: 'https://github.com/Vytheki-S/EventAura',
     },
     {
       id: 3,
-      title: 'Jaffna Thirvalluvar Cultural Center',
-      description: 'Official website for real client cultural organization in Jaffna, full frontend + backend',
-      tags: ['React', 'Django', 'MySQL'],
+      title: 'FeedPulse',
+      description: 'AI-powered product feedback platform with Gemini analysis, admin triage, and trend insights',
+      tags: ['Next.js', 'Node.js', 'MongoDB', 'Gemini', 'TypeScript'],
       category: 'Web',
-      isClient: true,
       isFeatured: true,
+      githubUrl: 'https://github.com/Vytheki-S/FeedPulse-',
     },
     {
       id: 4,
-      title: 'Chatbot',
-      description: 'AI-powered chatbot with Python and natural language processing capabilities',
-      tags: ['Python', 'AI/ML'],
-      category: 'AI',
-      githubUrl: 'https://github.com/Vytheki-S',
+      title: 'Lynkerr',
+      description: 'Travel experience listing platform where guides publish offerings and travelers discover local experiences',
+      tags: ['React', 'Vite', 'Tailwind CSS', 'Django', 'MySQL'],
+      category: 'Web',
+      isFeatured: true,
+      githubUrl: 'https://github.com/Vytheki-S/lynkerr',
     },
     {
       id: 5,
@@ -65,7 +67,7 @@ export function Projects() {
       description: 'Online examination system with auto-grading, timer, and result management',
       tags: ['PHP', 'MySQL', 'HTML', 'CSS'],
       category: 'Web',
-      githubUrl: 'https://github.com/Vytheki-S',
+      githubUrl: 'https://github.com/Vytheki-S/Exam-pro',
     },
     {
       id: 6,
@@ -73,7 +75,7 @@ export function Projects() {
       description: 'Employee leave management with approval workflow and admin dashboard',
       tags: ['JavaScript', 'HTML', 'CSS'],
       category: 'Web',
-      githubUrl: 'https://github.com/Vytheki-S',
+      githubUrl: 'https://github.com/Vytheki-S/Leave-Management-System',
     },
     {
       id: 7,
@@ -81,26 +83,11 @@ export function Projects() {
       description: 'Java-based event management with booking, scheduling, and reporting features',
       tags: ['Java'],
       category: 'Web',
-      githubUrl: 'https://github.com/Vytheki-S',
-    },
-    {
-      id: 8,
-      title: 'Android Mobile Application',
-      description: 'Mobile app with Android Studio and Kotlin using Jetpack Compose UI',
-      tags: ['Kotlin', 'Android', 'Firebase'],
-      category: 'Android',
-    },
-    {
-      id: 9,
-      title: 'Figma UI/UX Mobile Design',
-      description: 'Complete mobile app design with user flows, prototyping, and component library',
-      tags: ['Figma', 'Prototyping', 'UI/UX'],
-      category: 'UI/UX',
-      demoUrl: '#',
+      githubUrl: 'https://github.com/Vytheki-S/Event-pro',
     },
   ];
 
-  const filters = ['All', 'Web', 'Android', 'AI', 'UI/UX'];
+  const filters = ['All', 'Web'];
 
   const filteredProjects =
     activeFilter === 'All'
